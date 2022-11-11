@@ -1,9 +1,10 @@
 <TableLayout
+    android:id="@+id/TL"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="100"
-    android:background="#336128">
+    android:background="@color/verdeNormal">
     <!--android:stretchColumns="0,1,2"-->
 
 

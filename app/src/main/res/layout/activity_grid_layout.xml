@@ -1,36 +1,39 @@
 <GridLayout
+    android:id="@+id/GL"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:rowCount="6"
-    android:columnCount="4"
-    android:orientation="horizontal">
+    android:columnCount="1"
+    android:orientation="horizontal"
+    android:background="@color/verdeNormal">
     <TableRow
         android:layout_height="120dp"
         android:layout_weight="0">
 
         <TextView
+            android:layout_width="377dp"
             android:layout_height="100dp"
             android:layout_marginVertical="20dp"
             android:layout_marginLeft="17dp"
             android:layout_span="4"
             android:background="#96F180"
             android:hint="2x46-20"
-            android:textSize="70dp"
             android:textAlignment="textEnd"
-            />
+            android:textSize="70dp" />
     </TableRow>
 
     <TableRow
-        
-        
+
+
         android:layout_margin="10dp"
         android:layout_weight="15">
 
         <Button
             android:id="@+id/txtBoton7"
-            
-            
+
+
+            android:layout_height="86dp"
             android:layout_margin="5dp"
             android:text="7"
             android:textColor="#E0A10C"
@@ -38,8 +41,9 @@
 
         <Button
             android:id="@+id/txtBoton8"
-            
-            
+            android:layout_height="86dp"
+
+
             android:layout_margin="5dp"
             android:text="8"
             android:textColor="#E0A10C"
@@ -47,8 +51,9 @@
 
         <Button
             android:id="@+id/txtBoton9"
-            
-            
+            android:layout_height="86dp"
+
+
             android:layout_margin="5dp"
             android:text="9"
             android:textColor="#E0A10C"
@@ -56,8 +61,9 @@
 
         <Button
             android:id="@+id/txtBotonDiv"
-            
-            
+            android:layout_height="86dp"
+
+
             android:layout_margin="5dp"
             android:text="%"
             android:textColor="#96F180"
@@ -67,29 +73,33 @@
     <TableRow android:layout_weight="15"
         android:layout_margin="10dp">
         <Button android:id="@+id/txtBoton4"
-            
-            
+            android:layout_height="86dp"
+
+
             android:text="4"
             android:textColor="#E0A10C"
             android:textSize="25dp"
             android:layout_margin="5dp"/>
         <Button android:id="@+id/txtBoton5"
-            
-            
+            android:layout_height="86dp"
+
+
             android:text="5"
             android:textColor="#E0A10C"
             android:textSize="25dp"
             android:layout_margin="5dp"/>
         <Button android:id="@+id/txtBoton6"
-            
-            
+            android:layout_height="86dp"
+
+
             android:text="6"
             android:textColor="#E0A10C"
             android:textSize="25dp"
             android:layout_margin="5dp"/>
         <Button android:id="@+id/txtBotonMul"
-            
-            
+            android:layout_height="86dp"
+
+
             android:text="x"
             android:textColor="#96F180"
             android:textSize="25dp"
@@ -98,29 +108,33 @@
     <TableRow android:layout_weight="15"
         android:layout_margin="10dp">
         <Button android:id="@+id/txtBoton1"
-            
-            
+            android:layout_height="86dp"
+
+
             android:text="1"
             android:textColor="#E0A10C"
             android:textSize="25dp"
             android:layout_margin="5dp"/>
         <Button android:id="@+id/txtBoton2"
-            
-            
+            android:layout_height="86dp"
+
+
             android:text="2"
             android:textColor="#E0A10C"
             android:textSize="25dp"
             android:layout_margin="5dp"/>
         <Button android:id="@+id/txtBoton3"
-            
-            
+            android:layout_height="86dp"
+
+
             android:text="3"
             android:textColor="#E0A10C"
             android:textSize="25dp"
             android:layout_margin="5dp"/>
         <Button android:id="@+id/txtBotonRes"
-            
-            
+
+            android:layout_height="86dp"
+
             android:text="-"
             android:textColor="#96F180"
             android:textSize="25dp"
@@ -128,24 +142,30 @@
     </TableRow>
     <TableRow android:layout_weight="15"
         android:layout_margin="10dp">
-        <Button android:id="@+id/txtBoton0"
-            
-            
+
+        <Button
+            android:id="@+id/txtBoton0"
+            android:layout_height="86dp"
+
+
+            android:layout_width="185dp"
+            android:layout_margin="5dp"
+            android:layout_span="2"
             android:text="0"
             android:textColor="#E0A10C"
-            android:textSize="25dp"
-            android:layout_margin="5dp"
-            android:layout_span="2"/>
+            android:textSize="25dp" />
         <Button android:id="@+id/txtBotonDot"
-            
-            
+            android:layout_height="86dp"
+
+
             android:text="·"
             android:textColor="#96F180"
             android:textSize="25dp"
             android:layout_margin="5dp"/>
         <Button android:id="@+id/txtBotonSum"
-            
-            
+
+            android:layout_height="86dp"
+
             android:text="+"
             android:textColor="#96F180"
             android:textSize="25dp"
@@ -153,21 +173,29 @@
     </TableRow>
     <TableRow android:layout_weight="15"
         android:layout_margin="10dp">
-        <Button android:id="@+id/txtBotonEqual"
-            
-            
+
+        <Button
+            android:id="@+id/txtBotonEqual"
+            android:layout_height="86dp"
+
+
+            android:layout_width="185dp"
+            android:layout_margin="5dp"
+            android:layout_span="2"
             android:text="="
             android:textColor="#96F180"
-            android:textSize="25dp"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/txtBotonC"
+            android:layout_height="86dp"
+
+
+            android:layout_width="188dp"
             android:layout_margin="5dp"
-            android:layout_span="2"/>
-        <Button android:id="@+id/txtBotonC"
-            
-            
+            android:layout_span="2"
             android:text="C"
             android:textColor="#96F180"
-            android:textSize="25dp"
-            android:layout_margin="5dp"
-            android:layout_span="2"/>
+            android:textSize="25dp" />
     </TableRow>
 </GridLayout>

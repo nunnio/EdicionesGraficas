@@ -36,8 +36,8 @@ public class ConstraintActivity extends AppCompatActivity {
         web.setWebViewClient(new WebViewClient());
         WebSettings ws = web.getSettings();
         ws.setJavaScriptEnabled(true);
-        String url = "jkfldasjklñ";
-        web.loadUrl(url);
+        String url = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dxRB4sdbIcw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+        web.loadData(url, "text/html","UTF-8");
         /*setSupportActionBar(binding.toolbar);
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

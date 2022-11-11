@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Juego">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/marronClaro"
+        android:padding="15dp"
+        android:text="Piedra papel o tijeras"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="411dp"
+        android:layout_height="384dp"
+        android:background="@color/marronOscuro"
+        android:paddingTop="50dp"
+        android:text="El contrincante ha elegido:"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="411dp"
+        android:layout_height="280dp"
+        android:background="@color/marronClaro"
+        android:padding="15dp"
+        android:text="Elije una opción para jugar"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <ImageView
+        android:id="@+id/imageViewPiedra"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        app:srcCompat="@drawable/tijeras"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="547dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.5"/>
+    <ImageView
+        android:id="@+id/imageViewTijeras"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        app:srcCompat="@drawable/rock"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="547dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.5"/>
+    <ImageView
+        android:id="@+id/imageViewPapel"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        app:srcCompat="@drawable/papel"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="547dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <Button
+        android:id="@+id/botonTijeras"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        android:background="@drawable/tijeras"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="547dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.97"/>
+
+    <Button
+        android:id="@+id/botonPiedra"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:background="@drawable/rock"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="548dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <Button
+        android:id="@+id/botonPapel"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:background="@drawable/papel"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="548dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.04"/>
+
+    <!--<Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="@color/marronRojo"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:text="PIEDRA"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.1"
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="@color/marronRojo"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:text="TIJERAS"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="@color/marronRojo"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:text="PAPEL"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.9"
+
+        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
